@@ -1,0 +1,34 @@
+{
+  "name": "celsa-site",
+  "version": "1.0.0",
+  "description": "This is the official website of Celsa Arbaiza. Executive Business Developer & TV Presenter.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milano12345/celsa-site.git"
+  },
+  "keywords": [
+    "business",
+    "developer",
+    "executive",
+    "celsa",
+    "arbaiza",
+    "toro",
+    "taxes",
+    "bombastik",
+    "neeva",
+    "professional",
+    "bookkeeping",
+    "insurance"
+  ],
+  "author": "Milano12345",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milano12345/celsa-site/issues"
+  },
+  "homepage": "https://github.com/milano12345/celsa-site#readme"
+}
