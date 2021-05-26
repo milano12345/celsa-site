@@ -295,7 +295,7 @@ input, select, textarea {
 		}
 
 		.row > .col-3 {
-			width: 25%;
+			width: 33%;
 		}
 
 		.row > .off-3 {
@@ -2904,7 +2904,6 @@ input, select, textarea {
 	  }
 	  
 	  .container {
-		max-width: 400px;
 		width: 100%;
 		margin: 0 auto;
 		position: relative;
