@@ -133,6 +133,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		color: #444;
 		font-weight: 800;
+		font-size: 1.6rem;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1923,7 +1924,7 @@ input, select, textarea {
 	}
 
 	#footer-wrapper {
-		padding: 6em 0 8em 0;
+		padding: 23em 0 8em 0;
 	}
 
 /* Header */
@@ -2257,6 +2258,11 @@ input, select, textarea {
 				padding: 6em 0 4em 0;
 			}
 
+			@media screen and (max-width: 980px){
+#footer-wrapper {
+    padding: 24em 0 4em 0!important;
+}}
+
 		/* Header */
 
 			#header {
@@ -2348,6 +2354,7 @@ input, select, textarea {
 			}
 
 				#navToggle .toggle {
+					display: none;
 					text-decoration: none;
 					width: 70px;
 					height: 50px;
@@ -2368,7 +2375,7 @@ input, select, textarea {
 					}
 
 					#navToggle .toggle:before {
-						display: inline-block;
+						display: none;
 						text-decoration: none;
 						position: absolute;
 						left: 6px;
@@ -2836,6 +2843,7 @@ input, select, textarea {
 	  
 	  nav {
 		position: absolute;
+		top: 4rem;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 100;
@@ -2844,7 +2852,7 @@ input, select, textarea {
 	  nav .prev,
 	  nav .next {
 		background-color: black;
-		padding: 0.25rem 0.5rem;
+		padding: 0.5rem 1.5rem;
 		color: white;
 	  }
 	  nav .prev {
