@@ -3239,7 +3239,7 @@ input, select, textarea {
 		position: absolute;
 		align-items: center;
 		justify-content: center;
-		top: -43%;
+		top: -40%;
 		left: 50%;
 		opacity: 0;
 	}
