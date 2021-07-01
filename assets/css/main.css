@@ -1925,7 +1925,7 @@ input, select, textarea {
 	}
 
 	#footer-wrapper {
-		padding: 23em 0 8em 0;
+		padding: 46em 0 8em 0;
 	}
 
 /* Header */
@@ -2840,7 +2840,7 @@ input, select, textarea {
 		transform: translate(-50%, -50%) rotate(270deg);
 	  }
 	  .featured-slider li .image {
-		width: 1203px;
+		width: 1205px;
 		height: auto;
 		transform: translate(1px, 728px);
 	  }
@@ -3241,7 +3241,7 @@ input, select, textarea {
 		position: absolute;
 		align-items: center;
 		justify-content: center;
-		top: -42%;
+		top: -40%;
 		left: 50%;
 		opacity: 0;
 	}
@@ -3252,3 +3252,6 @@ input, select, textarea {
 	}
 
 
+.widget {
+margin-top: 1rem;
+}
