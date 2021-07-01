@@ -3113,7 +3113,6 @@ input, select, textarea {
 	  .modal__trigger {
 		position: relative;
 		display: inline-block;
-		padding: 1.5rem 3rem;
 		color: rgba(0,0,0,0.7);
 		line-height: 1;
 		cursor: pointer;
@@ -3240,7 +3239,7 @@ input, select, textarea {
 		position: absolute;
 		align-items: center;
 		justify-content: center;
-		top: -40%;
+		top: -43%;
 		left: 50%;
 		opacity: 0;
 	}
