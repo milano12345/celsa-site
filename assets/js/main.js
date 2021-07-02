@@ -375,7 +375,7 @@ var Modal = (function() {
   function handleEnd(evt) {
 	evt.preventDefault();
 	log("touchend");
-	var el = document.getElementById("canvas");
+	var el = document.getElementById("page-wrapper");
 	var ctx = el.getContext("2d");
 	var touches = evt.changedTouches;
   
