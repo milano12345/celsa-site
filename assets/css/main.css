@@ -2792,7 +2792,7 @@ input, select, textarea {
 		font-weight: bold;
 		font-size: 10px;
 		letter-spacing: 2px;
-		margin-top: 1rem;
+		margin-bottom: 2.3rem;
 		z-index: 9999;
 	  }
 	  .details .button:hover {
@@ -2824,6 +2824,12 @@ input, select, textarea {
 		left: 0;
 		transition: opacity 0.5s ease;
 		opacity: 0.25;
+		color: #EEE;
+		font-size: 1.4rem;
+	  }
+	  .title {
+		font-size: 2.3rem;
+		padding-top: 2rem;
 	  }
 	  .featured-slider li.active {
 		opacity: 1;
