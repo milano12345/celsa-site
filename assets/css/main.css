@@ -2793,6 +2793,7 @@ input, select, textarea {
 		font-size: 10px;
 		letter-spacing: 2px;
 		margin-bottom: 2.3rem;
+		margin-top: -2rem;
 		z-index: 9999;
 	  }
 	  .details .button:hover {
