@@ -97,7 +97,7 @@ input, select, textarea {
 		background-size: 100% 30em, auto; */
 		font-family: 'Open Sans', sans-serif;
 		font-size: 13pt;
-		color: #696969;
+		color: #0c0404;
 		font-weight: 300;
 		line-height: 2.25em;
 	}
@@ -2128,6 +2128,7 @@ input, select, textarea {
 
 	#footer {
 		margin-top: 0;
+		color: #EEE;
 	}
 
 		#footer a {
@@ -2709,7 +2710,7 @@ input, select, textarea {
 	body {
 		/*font-family: serif !important;*/
 		background: #222!important;
-		color: #eee!important;
+		color: black;
 		overflow-x: hidden;
 		text-align:center
 	  }
