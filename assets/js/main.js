@@ -164,9 +164,43 @@ var wheel = Draggable.create("#wheel", {
  var square = '<svg x="0px" y="0px" width="1200px" height="600px" viewBox="0 0 1200 600"><rect x="0.002" y="0.499" width="1200" height="600"/></svg>'
 
 //  modal js
-
-$('.modal__trigger').addEventListener('touchend', function(e){happens(e)}, false);
 // mODAL
+
+
+$(document).ready(function () {
+	$(".modal__trigger").click(function (e) {
+	  e.preventDefault();
+	  console.log('clicked jquery')
+	});
+  });
+
+
+
+
+window.onload = function () {
+	list = document.querySelectorAll(".modal__trigger");
+	console.log(list, 'load')
+	for (var i = 0; i < list.length; i++) {
+	  list[i].addEventListener("click", function (e) {
+		  e.preventDefault();
+		  console.log('new click trigger')
+	  });
+	}
+  };
+
+window.onload = function () {
+	list = document.getElementsByClassName(".modal__trigger");
+	for (var i = 0; i < list.length; i++) {
+	  list[i].addEventListener("touchend", function (e) {
+		  e.preventDefault();
+		  console.log('touched')
+	  });
+	  list[i].addEventListener("clicked", function (e) {
+		e.preventDefault();
+		console.log('clicked')
+	});
+	}
+  };
 
 var Modal = (function() {
 	
@@ -360,40 +394,4 @@ var Modal = (function() {
   
   Modal.init();
 
-  function startup() {
-	var el = document.getElementById("page-wrapper");
-	el.addEventListener("touchstart", handleStart, false);
-	el.addEventListener("touchend", handleEnd, false);
-	el.addEventListener("touchcancel", handleCancel, false);
-	el.addEventListener("touchmove", handleMove, false);
-  }
-  
-  document.addEventListener("DOMContentLoaded", startup);
-
-  var ongoingTouches = [];
-
-  function handleEnd(evt) {
-	evt.preventDefault();
-	log("touchend");
-	var el = document.getElementById("page-wrapper");
-	var ctx = el.getContext("2d");
-	var touches = evt.changedTouches;
-  
-	for (var i = 0; i < touches.length; i++) {
-	  var color = colorForTouch(touches[i]);
-	  var idx = ongoingTouchIndexById(touches[i].identifier);
-  
-	  if (idx >= 0) {
-		ctx.lineWidth = 4;
-		ctx.fillStyle = color;
-		ctx.beginPath();
-		ctx.moveTo(ongoingTouches[idx].pageX, ongoingTouches[idx].pageY);
-		ctx.lineTo(touches[i].pageX, touches[i].pageY);
-		ctx.fillRect(touches[i].pageX - 4, touches[i].pageY - 4, 8, 8);  // and a square at the end
-		ongoingTouches.splice(idx, 1);  // remove it; we're done
-	  } else {
-		console.log("can't figure out which touch to end");
-	  }
-	}
-  }
-  
+ 
