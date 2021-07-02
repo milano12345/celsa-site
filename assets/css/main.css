@@ -2057,13 +2057,9 @@ input, select, textarea {
 				padding: 0 1.5em;
 			}
 
-				.dropotron li > a:hover, .dropotron li > span:hover {
-					background: #eee;
-				}
+			
 
-			.dropotron li.active > a, .dropotron li.active > span {
-				background: #eee;
-			}
+
 
 		.dropotron.level-0 {
 			font-size: 0.8em;
