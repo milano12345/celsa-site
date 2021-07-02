@@ -95,7 +95,8 @@ input, select, textarea {
 		background-position: top left, top left;
 		background-repeat: repeat-x, repeat;
 		background-size: 100% 30em, auto; */
-		background-color: #222!important;
+		background: rgb(1,1,15);
+		background: linear-gradient(180deg, rgba(1,1,15,1) 0%, rgba(1,1,20,1) 35%, rgba(5,81,97,0.9868989832261029) 100%)!important;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 13pt;
 		color: #0c0404;
@@ -1219,7 +1220,6 @@ input, select, textarea {
 				flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
-				margin-top: 3rem;
 				padding: 3rem;
 			}
 
@@ -2129,7 +2129,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		margin-top: 0;
+		margin-top: 8rem;
 		color: #EEE;
 		background: #070e43;
 	}
