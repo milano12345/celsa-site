@@ -169,7 +169,7 @@ var wheel = Draggable.create("#wheel", {
 // mODAL
 
 var Modal = (function() {
-
+	
 	var trigger = $qsa('.modal__trigger'); // what you click to activate the modal
 	var modals = $qsa('.modal'); // the entire modal (takes up entire window)
 	var modalsbg = $qsa('.modal__bg'); // the entire modal (takes up entire window)
@@ -360,3 +360,40 @@ var Modal = (function() {
   
   Modal.init();
 
+  function startup() {
+	var el = document.getElementById("canvas");
+	el.addEventListener("touchstart", handleStart, false);
+	el.addEventListener("touchend", handleEnd, false);
+	el.addEventListener("touchcancel", handleCancel, false);
+	el.addEventListener("touchmove", handleMove, false);
+  }
+  
+  document.addEventListener("DOMContentLoaded", startup);
+
+  var ongoingTouches = [];
+
+  function handleEnd(evt) {
+	evt.preventDefault();
+	log("touchend");
+	var el = document.getElementById("canvas");
+	var ctx = el.getContext("2d");
+	var touches = evt.changedTouches;
+  
+	for (var i = 0; i < touches.length; i++) {
+	  var color = colorForTouch(touches[i]);
+	  var idx = ongoingTouchIndexById(touches[i].identifier);
+  
+	  if (idx >= 0) {
+		ctx.lineWidth = 4;
+		ctx.fillStyle = color;
+		ctx.beginPath();
+		ctx.moveTo(ongoingTouches[idx].pageX, ongoingTouches[idx].pageY);
+		ctx.lineTo(touches[i].pageX, touches[i].pageY);
+		ctx.fillRect(touches[i].pageX - 4, touches[i].pageY - 4, 8, 8);  // and a square at the end
+		ongoingTouches.splice(idx, 1);  // remove it; we're done
+	  } else {
+		console.log("can't figure out which touch to end");
+	  }
+	}
+  }
+  
