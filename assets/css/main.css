@@ -95,14 +95,13 @@ input, select, textarea {
 		background-position: top left, top left;
 		background-repeat: repeat-x, repeat;
 		background-size: 100% 30em, auto; */
-		background: rgb(1,1,15);
-		background: linear-gradient(
+		background: linear-gradient( 
 			180deg
-			, rgb(1 1 20 / 67%) 0%, #161407 35%, rgba(5,81,97,0.9868989832261029) 100%)!important;
+			 , rgb(1 1 20 / 67%) 0%, #161407 35%, rgb(51 53 53 / 99%) 100%)!important;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 13pt;
 		color: #0c0404;
-		font-weight: 300;
+		font-weight: 700!important;
 		line-height: 2.25em;
 	}
 
@@ -2865,7 +2864,7 @@ background: linear-gradient(357deg, rgba(1,1,15,1) 0%, rgba(1,1,20,1) 35%, rgba(
 	  
 	  nav {
 		position: absolute;
-		top: 4rem;
+		top: 24rem;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 100;
