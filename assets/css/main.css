@@ -95,9 +95,8 @@ input, select, textarea {
 		background-position: top left, top left;
 		background-repeat: repeat-x, repeat;
 		background-size: 100% 30em, auto; */
-		background: linear-gradient( 
-			180deg
-			 , rgb(1 1 20 / 67%) 0%, #161407 35%, rgb(51 53 53 / 99%) 100%)!important;
+		background: rgb(1,1,15);
+		background: linear-gradient(180deg, rgba(1,1,15,1) 0%, rgba(1,1,20,1) 35%, rgba(5,81,97,0.9868989832261029) 100%)!important;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 13pt;
 		color: #0c0404;
@@ -2132,8 +2131,8 @@ input, select, textarea {
 	#footer {
 		margin-top: 8rem;
 		color: #EEE;
-		background: rgb(1,1,15);
-background: linear-gradient(357deg, rgba(1,1,15,1) 0%, rgba(1,1,20,1) 35%, rgba(5,81,97,0.9868989832261029) 100%);;
+		/* background: rgb(1,1,15);
+background: linear-gradient(357deg, rgba(1,1,15,1) 0%, rgba(1,1,20,1) 35%, rgba(5,81,97,0.9868989832261029) 100%);; */
 	}
 
 		#footer a {
