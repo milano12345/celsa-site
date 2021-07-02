@@ -314,7 +314,7 @@ var Modal = (function() {
 		* remove the inline css from the trigger to move it back into its original position.
 			  */
   
-			  for (var i = 0; i < len; i++) {
+			  for (var i = 0; i < modals.length; i++) {
 				  modals[i].classList.remove('modal--active');
 				  content[i].classList.remove('modal__content--active');
 				  trigger[i].style.transform = 'none';
@@ -359,3 +359,4 @@ var Modal = (function() {
   }());
   
   Modal.init();
+
