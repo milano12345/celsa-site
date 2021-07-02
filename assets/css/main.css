@@ -2268,7 +2268,7 @@ input, select, textarea {
 
 			@media screen and (max-width: 980px){
 #footer-wrapper {
-    padding: 54em 0 4em 0!important;
+    padding: 37em 0 4em 0!important;
 }}
 
 		/* Header */
@@ -2810,7 +2810,7 @@ input, select, textarea {
 		width: 0;
 		top: 0;
 		left: 50%;
-		transform: translate3d(0px, 180px, 0px) scale(0.45, 0.45);
+		transform: translate3d(0px, 180px, 0px) scale(0.35, 0.35);
 	  }
 	  .featured-slider li {
 		-webkit-user-select: none;
