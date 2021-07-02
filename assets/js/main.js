@@ -368,10 +368,22 @@ var Modal = (function() {
   
 	};
   
+	function stopTouchendPropagationAfterScroll(){
+		var locked = false;
+		window.addEventListener('touchmove', function(ev){
+			locked || (locked = true, window.addEventListener('touchend', stopTouchendPropagation, true));
+		}, true);
+		function stopTouchendPropagation(ev){
+			ev.stopPropagation();
+			window.removeEventListener('touchend', stopTouchendPropagation, true);
+			locked = false;
+		}
+	}
+
 	var bindActions = function() {
 	  for (var i = 0; i < len; i++) {
 		trigger[i].addEventListener('click', getId, false);
-		trigger[i].addEventListener('vclick', getId, false);
+		trigger[i].addEventListener('touchend', getId, stopTouchendPropagationAfterScroll, false);
 		closers[i].addEventListener('click', close, false);
 		closers[i].addEventListener('touchend', close, false);
 		modalsbg[i].addEventListener('click', close, false);
