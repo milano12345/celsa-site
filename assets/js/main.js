@@ -172,6 +172,10 @@ $(document).ready(function () {
 	  e.preventDefault();
 	  console.log('clicked jquery')
 	});
+	$(".modal__trigger").touchend(function (e) {
+		e.preventDefault();
+		console.log('clicked jquery')
+	  });
   });
 
 
