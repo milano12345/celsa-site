@@ -167,16 +167,42 @@ var wheel = Draggable.create("#wheel", {
 // mODAL
 
 
+
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function () {
+	$(".modal__trigger").on("touchend", function (e) {
+		console.log(e, 'go')
+		Modal()
+
+	})	
 	$(".modal__trigger").click(function (e) {
 	  e.preventDefault();
-	  console.log('clicked jquery')
+	  console.log('clicked jquery1')
 	});
-	$(".modal__trigger").touchend(function (e) {
+	$(".modal__trigger").click(function (e) {
 		e.preventDefault();
-		console.log('clicked jquery')
+		console.log('clicked jquery2')
 	  });
   });
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -381,8 +407,11 @@ var Modal = (function() {
 	var bindActions = function() {
 	  for (var i = 0; i < len; i++) {
 		trigger[i].addEventListener('click', getId, false);
+		trigger[i].addEventListener('touchend', getId, false);
 		closers[i].addEventListener('click', close, false);
+		closers[i].addEventListener('touchend', close, false);
 		modalsbg[i].addEventListener('click', close, false);
+		modalsbg[i].addEventListener('touchend', close, false);
 	  }
 	};
   
