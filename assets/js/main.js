@@ -361,7 +361,7 @@ var Modal = (function() {
   Modal.init();
 
   function startup() {
-	var el = document.getElementById("canvas");
+	var el = document.getElementById("page-wrapper");
 	el.addEventListener("touchstart", handleStart, false);
 	el.addEventListener("touchend", handleEnd, false);
 	el.addEventListener("touchcancel", handleCancel, false);
