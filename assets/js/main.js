@@ -171,17 +171,6 @@ var wheel = Draggable.create("#wheel", {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 window.onload = function () {
 	list = document.querySelectorAll(".modal__trigger");
 	console.log(list, 'load')
@@ -382,7 +371,7 @@ var Modal = (function() {
 	var bindActions = function() {
 	  for (var i = 0; i < len; i++) {
 		trigger[i].addEventListener('click', getId, false);
-		trigger[i].addEventListener('tap', getId, false);
+		trigger[i].addEventListener('touchend', getId, false);
 		closers[i].addEventListener('click', close, false);
 		closers[i].addEventListener('touchend', close, false);
 		modalsbg[i].addEventListener('click', close, false);
