@@ -371,7 +371,7 @@ var Modal = (function() {
 	var bindActions = function() {
 	  for (var i = 0; i < len; i++) {
 		trigger[i].addEventListener('click', getId, false);
-		trigger[i].addEventListener('mouseup', getId, false);
+		trigger[i].addEventListener('vclick', getId, false);
 		closers[i].addEventListener('click', close, false);
 		closers[i].addEventListener('touchend', close, false);
 		modalsbg[i].addEventListener('click', close, false);
