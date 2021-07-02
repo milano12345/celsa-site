@@ -165,7 +165,7 @@ var wheel = Draggable.create("#wheel", {
 
 //  modal js
 
-
+$('.modal__trigger').addEventListener('touchend', function(e){happens(e)}, false);
 // mODAL
 
 var Modal = (function() {
