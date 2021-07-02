@@ -3256,6 +3256,4 @@ margin-top: 1rem;
 
 body {
 	height:100%;
-	overflow: scroll;
--webkit-overflow-scrolling: touch;
 }
