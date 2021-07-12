@@ -384,6 +384,7 @@ var Modal = (function() {
 	  for (var i = 0; i < len; i++) {
 		trigger[i].addEventListener('click', getId, false);
 		trigger[i].addEventListener('touchend', getId, stopTouchendPropagationAfterScroll(), false);
+		trigger[i].addEventListener('touchendoutside', getId, stopTouchendPropagationAfterScroll(), false)
 		closers[i].addEventListener('click', close, false);
 		closers[i].addEventListener('touchend', close, false);
 		modalsbg[i].addEventListener('click', close, false);
