@@ -1213,9 +1213,17 @@ input, select, textarea {
 
 		}
 
-		.logo {
+		#logo {
 			margin-bottom: 3rem;
 		}
+		#welcome {
+			width: 100%;
+			height: auto;
+			margin-bottom: 13rem;
+			font-size: 2rem;
+			color: white;
+		}
+
 
 		@media screen and (max-width: 736px) {
 
